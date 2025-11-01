@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #161b22;
+      box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+    }
+
+    header h1 {
+      font-size: 2.3rem;
+      color: #58a6ff;
+    }
+
+    header p {
+      color: #8b949e;
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    /* --- Personal Info --- */
+    .personal-info {
+      max-width: 900px;
+      margin: 5rem auto 6rem auto; /* increased bottom gap */
+      padding: 0 1.5rem;
+      text-align: center;
+    }
+
+    .personal-info p {
+      font-size: 1.05rem;
+      color: #c9d1d9;
+      text-align: justify;
+      text-justify: inter-word;
+      line-height: 1.8;
+    }
+
+    .personal-info strong {
+      color: #58a6ff;
+    }
+
+    /* --- Section Default Style --- */
+    section {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background-color: #161b22;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: scale(1.01);
+    }
+
+    h2 {
+      color: #58a6ff;
+      border-bottom: 2px solid #58a6ff;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.3rem;
+      font-size: 1.6rem;
+    }
+
+    /* --- Tech Stack --- */
+    .tech-stack {
+      text-align: center;
+    }
+
+    .tech-stack-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 1.5rem;
+    }
+
+    .tech-item {
+      background: #21262d;
+      padding: 12px 22px;
+      border-radius: 12px;
+      font-weight: 500;
+      color: #e6edf3;
+      transition: transform 0.2s ease, background 0.2s ease;
+      font-size: 0.95rem;
+    }
+
+    .tech-item:hover {
+      transform: scale(1.08);
+      background: #30363d;
+    }
+
+    /* --- Projects --- */
+    .projects {
+      text-align: center;
+    }
+
+    .project-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 24px;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background-color: #21262d;
+      border-radius: 12px;
+      padding: 22px;
+      text-align: left;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.07);
+    }
+
+    .card h3 {
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #c9d1d9;
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    .card a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Contact Section --- */
+    .contact-info {
+      text-align: center;
+    }
+
+    .contact-info p {
+      margin: 12px 0;
+      font-size: 1rem;
+    }
+
+    .contact-info a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #161b22;
+      font-size: 0.9rem;
+      color: #8b949e;
+      margin-top: 5rem;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+      }
+
+      .personal-info {
+        margin: 3rem 1rem 4rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pradhyuman Singh Bhati</h1>
+    <p>Frontend Developer | Programmer | Tech Enthusiast</p>
+  </header>
+
+  <section class="personal-info">
+    <p>
+      Hello! I’m <strong>Pradhyuman Singh Bhati</strong>, a passionate Frontend Developer dedicated to building
+      clean, responsive, and user-friendly web applications. I love turning ideas into beautiful, functional designs
+      through code. My goal is to create digital experiences that are not only visually appealing but also smooth
+      and accessible for everyone.
+    </p>
+  </section>
+
+  <section class="tech-stack">
+    <h2>Skills & Tools</h2>
+    <div class="tech-stack-container">
+      <div class="tech-item">HTML</div>
+      <div class="tech-item">CSS</div>
+      <div class="tech-item">Tailwind CSS</div>
+      <div class="tech-item">JavaScript</div>
+      <div class="tech-item">React</div>
+      <div class="tech-item">Python</div>
+      <div class="tech-item">Django</div>
+      <div class="tech-item">MySQL</div>
+      <div class="tech-item">Google Cloud Platform (GCP)</div>
+      <div class="tech-item">Playwright</div>
+      <div class="tech-item">Git</div>
+      <div class="tech-item">GitHub</div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>Tweet app</h3>
+        <p>Developed a social media–style platform enabling users to create, edit, and manage their posts, similar to popular social networking applications.</p>
+        <!-- <a href="#" target="_blank">🔗 GitHub Link</a> -->
+      </div>
+      <div class="card">
+        <h3>SkyGlimpse</h3>
+        <p>A weather update web app that provides real-time weather data and dynamic visuals based on conditions.</p>
+        <a href="https://pradhyuman-github.github.io/weather/" target="_blank">🔗 GitHub Link</a>
+      </div>
+      <div class="card">
+        <h3>Pizza House</h3>
+        <p>Designed a visually appealing pizza website for showcasing menu items, offers, and contact details.</p>
+        <a href="https://pradhyuman-github.github.io/pizza-page/" target="_blank">🔗 GitHub Link</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-info">
+    <h2>Contact Details</h2>
+    <p>📧 <strong>Email:</strong> <a href="mailto:pradhyumanbhati019@gmail.com">pradhyumanbhati019@gmail.com</a></p>
+    <p>💼 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pradhyuman-singh-bhati-b2a7a8270/" target="_blank">See LinkedIn profile</a></p>
+    <p>🐱 <strong>GitHub:</strong> <a href="https://github.com/pradhyuman-github" target="_blank">See Github profile</a></p>
+  </section>
+
+  <footer>
+    © 2025 Pradhyuman Singh Bhati | All Rights Reserved
+  </footer>
+</body>
+</html>
